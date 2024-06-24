@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Site</title>
+    <link  rel="stylesheet" type="text/css" href="./assets/CSS/style.css">
+
     <style>
 
 
@@ -13,27 +15,46 @@
 <body>
 <!-- Header -->
  
-    <header>
+    <header class="container">
 
-        <img src="./assets/Images/logo.png" alt="Logo da empresa XPTO">
-        <!-- Menu do Site -->
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Sobre</li>
-                <li>Portifólio</li>
-                <li>Contato</li>
-                <li>Currículo</li>
-            </ul>
-        <!-- End Menu -->
-        </nav>
+        <section class="row">
+            <img src="./assets/Images/logo.png" alt="Logo da empresa XPTO">
+            <!-- Menu do Site -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Sobre</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Portifólio</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="btn btn-laranja">Currículo</a>
+                    </li>
+                    
+                </ul>
+            <!-- End Menu -->
+            </nav>
+        </section>
+
     </header>
     <!-- End Header -->
 
     <!--Container-->
-    <main>
+    <main class="container">
+
         <!--Section content of Site-->
-        <section>
+        <section class="row sobre-web-design">
             
             <article>
                 <h1> Web Design </h1>
@@ -43,7 +64,7 @@
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 </p>
 
-                <a href="#"> Saiba Mais </a>
+                <a href="#" class="btn btn-laranja"> Saiba Mais </a>
             </article>
     
             <figcaption>
@@ -52,7 +73,6 @@
 
         </section>
         <!-- End Section content of Site-->
-
 
     </main>
     <!-- End Container-->
