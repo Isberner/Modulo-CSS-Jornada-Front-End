@@ -10,32 +10,67 @@
     }
 
     .sobre-web-design figcaption img{
-        width: 600px;
+        width: 100%;
     }
 }
 
 @media (max-width: 915px){
     body{
         background-position:  left top;
-        background-color: #b1f4ff;
+        background-color: #aea2a2;
     }
     .container{
         width: 700px;
     }
     .row{
-        flex-direction: column;
+        flex-direction: row;
     }
-    header nav{
+    /* header nav{
         margin: 30px 0;
+    } */
+    nav{
+        height: 3rem;
+    }
+    .nav-links-a ul li{
+        display: block;
+    }
+    .nav-links-a ul li a{
+        color: #877777;
+    }
+    .nav-links-a{
+        position: fixed;
+        background: #200000;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #877777;
+        margin: 5px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .fa-close{
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .nav-links-a ul{
+        padding: 30px;
     }
 
+    /*******************************************************************  */
     .sobre-web-design article{
-        width: 100%;
+        width: 70%;
     }
 
     .sobre-web-design figcaption img{
         width: 100%;
-        margin: 30px 0 0 0;
+        margin: 30px 30px;
     }
 
     footer .row{
@@ -48,26 +83,17 @@
     .container{
         width: 400px;
     }
+    .sobre-web-design figcaption img{
+        display: none;
+    }
+    .sobre-web-design article{
+        width: 100%;
+        align-items: center;
+    }
 }
 
 @media (max-width: 450px){
     .container{
         width: 290px;
-    }
-
-    header nav{
-        background: #FFF;
-        width: 80%;
-        padding: 10px 0 20px;
-        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
-        border-radius: 30%;
-    }
-
-    header nav ul{
-        flex-direction: column;
-    }
-
-    header nav ul li{
-        margin: 10px 0;
     }
 }
